@@ -2,7 +2,7 @@
 def fib_closure(limit):
     i, f0, f1 = 0, 1, 1
 
-    def generator(limit):
+    def generator():
         nonlocal i, f0, f1
         if i > limit:
             return
